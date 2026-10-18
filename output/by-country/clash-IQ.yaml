@@ -4,33 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
-  server: 104.21.23.80
-  port: 443
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: 172.66.44.124
+  port: 8443
   udp: true
-  type: vmess
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
   tls: true
-  servername: my.lovehk.xyz
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   skip-cert-verify: false
+  client-fingerprint: randomized
   network: ws
   ws-opts:
-    path: /KualaLumpur1
+    path: /
     headers:
-      Host: my.lovehk.xyz
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
