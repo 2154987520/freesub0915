@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.57.25",
+      "server": "172.67.139.14",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -26,22 +26,24 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "172.64.229.21",
+      "server": "172.67.139.14",
       "server_port": 443,
-      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
-      "security": "auto",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "vmess.lbw666.dpdns.org",
-        "insecure": false
+        "server_name": "www.volumeroot.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/assignment",
         "headers": {
-          "Host": "vmess.lbw666.dpdns.org"
+          "Host": "www.volumeroot.com"
         }
       }
     },
